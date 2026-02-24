@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-background: #020617;
+  /* Midnight Slate */
+  --color-foreground: #f8fafc;
+  /* Slate 50 */
+
+  --color-card: rgba(15, 23, 42, 0.6);
+  --color-card-border: rgba(255, 255, 255, 0.1);
+
+  --color-primary: #0ea5e9;
+  /* Electric Cyan */
+  --color-primary-glow: rgba(14, 165, 233, 0.3);
+  --color-accent: #818cf8;
+  /* Neon Indigo */
+
+  --color-success: #10b981;
+  /* Emerald 500 */
+  --color-warning: #f59e0b;
+  /* Amber 500 */
+  --color-danger: #ef4444;
+  /* Red 500 */
+}
+
+@layer base {
+  :root {
+    --background: #020617;
+    --foreground: #f8fafc;
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    background-attachment: fixed;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply backdrop-blur-xl bg-slate-900/20 border border-white/5 shadow-2xl;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  }
+
+  .neon-border {
+    @apply border border-primary/50;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(14, 165, 233, 0.5);
+  }
+
+  .hud-stat {
+    @apply bg-slate-950/20 border-l-2 border-primary px-3 py-2 rounded-r-md;
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 0.5;
+    filter: blur(5px);
+  }
+
+  50% {
+    opacity: 1;
+    filter: blur(8px);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s infinite ease-in-out;
+}

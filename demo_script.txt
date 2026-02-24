@@ -1,0 +1,62 @@
+# 🧬 GENO-CLARITY: Presentation Guide
+*A step-by-step guide to explaining the platform to any audience, using simple analogies to explain complex genetics.*
+
+---
+
+## 🛑 Step 1: The Consent Page (Privacy First)
+**What to show:** The initial landing screen with the three checkboxes.
+**What to say:** 
+> "Welcome to Geno-Clarity. Before we even look at a single piece of DNA, we put patient privacy first. Genomic data is highly sensitive. Usually, when you upload a file to a website, it gets saved on their servers forever. 
+> 
+> Our system uses a **'Zero File Persistence'** policy. Think of it like a snapchat message for your DNA—the system reads the file to do the math, and the second it's done, the file vanishes. It's never saved to a database. You have to explicitly check these three boxes to confirm you understand this before we proceed."
+
+---
+
+## 📁 Step 2: The Upload Experience
+**What to show:** Dragging and dropping the `test_data.vcf` file into the upload box and clicking Analyze.
+**What to say:** 
+> "Here, a doctor or patient uploads a standard DNA file called a **VCF** (Variant Call Format). These files are usually massive and require supercomputers to read.
+> 
+> We built a custom parser that works instantly right here in the cloud. It scans through millions of lines of DNA in milliseconds, looking only for the specific 'spelling mistakes' in the genes that control how our bodies process medication."
+
+---
+
+## 👤 Step 3: Patient View Dashboard
+**What to show:** The results loading, scrolling down to focus on the drug cards (especially Fluorouracil and Codeine).
+**What to say:** 
+> "This is the **Patient Dashboard**. We purposefully designed this to look more like a friendly health app than a scary medical chart. We use simple color coding (Green is good, Red is danger) and easy-to-understand emojis.
+> 
+> Instead of using heavy medical jargon, our AI translates the genetic science into **analogies**. 
+> - *For example, look at Fluorouracil (a chemotherapy drug).* The AI explains that for this patient, their liver enzymes are like a **'closed tollbooth'**. The drug will cause a massive traffic jam in their bloodstream, leading to severe toxicity.
+> - *Look at Codeine (a painkiller).* Codeine is special—it only works if your body converts it into morphine. The AI explains that for this patient, the factory that does this conversion is 'shut down'. If they take codeine, it simply won't work. They'll just still be in pain."
+
+---
+
+## 📈 Step 4: The Pharmacological Digital Twin
+**What to show:** Scroll down to the interactive graph. Select different drugs from the dropdown to watch the line change.
+**What to say:** 
+> "This is our flagship feature: the **Pharmacological Digital Twin**. It's a live simulation of what happens inside this exact patient's body over 24 hours if they take a specific pill.
+> 
+> - The **Red Zone** at the top is toxicity (overdose).
+> - The **Blue Zone** at the bottom is ineffective (it doesn't work).
+> - The **Green Zone** in the middle is the 'Goldilocks zone' where the medicine actually heals you.
+> 
+> Watch what happens when I select Codeine. Because of their genetics, the line barely leaves the ground—it never reaches the green zone. If I select Fluorouracil, the line shoots straight up into the red toxicity zone and stays there, because their body cannot clear the drug out."
+
+---
+
+## 🩺 Step 5: Clinical View Toggle
+**What to show:** Scroll up to the top and click the "Clinical View" toggle button. Expand a row by clicking the `›` arrow.
+**What to say:** 
+> "But doctors need the hard science. When we flip this switch to **Clinical View**, the entire interface transforms for a medical professional. 
+> 
+> Here, a physician can see the exact DNA 'diplotype' (like `*4/*4`), the specific `rsID` mutations we found, and strict dosing guidelines based on international standards (CPIC). You can click on any row to expand it, revealing a deep, technical breakdown of the enzyme pathways and why the Digital Twin graph looks the way it does."
+
+---
+
+## 💾 Step 6: Export & Audit 
+**What to show:** Click the "Download JSON Report" button.
+**What to say:** 
+> "Finally, Geno-Clarity isn't meant to live in isolation. By clicking this button, the entire analysis is exported as a structured data file. This allows hospitals to instantly import these life-saving insights directly into the patient's Electronic Health Record (EHR) system. 
+> 
+> And that is Geno-Clarity: bringing precision medicine out of the lab and into the hands of patients and doctors."
