@@ -53,5 +53,3 @@ This project is optimized for **Vercel**. Deploy instantly by linking your GitHu
 4. Deploy!
 
 ---
-
-Developed for **BuildwithAI Hackathon**. 🧪
